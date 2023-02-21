@@ -70,8 +70,8 @@
 //     }
 // getGreeting()
 
-//  getGreeting = (name) => {console.log( 'Hello ' + name + '!');}
-//  getGreeting()
-// END OF QUESTION 5
+ getGreeting = (name) => {console.log( 'Hello ' + name + '!');}
+ getGreeting()
+END OF QUESTION 5
     
 
