@@ -61,7 +61,7 @@
 // let result = `${a} + ${b} is `;
 
 // result = (a + b < 10) ? result += 'less than 10': result += 'greater than 10';
-// // += adds value to the 'less than 10' variable.?
+// // // += adds value to the 'less than 10' variable.?
 // console.log(result)
 // //// END OF QUESTION 4
 
@@ -70,8 +70,8 @@
 //     }
 // getGreeting()
 
- getGreeting = (name) => {console.log( 'Hello ' + name + '!');}
- getGreeting()
-END OF QUESTION 5
+//  getGreeting = (name) => {console.log( 'Hello ' + name + '!');}
+//  getGreeting()
+// // END OF QUESTION 5
     
 
