@@ -70,8 +70,12 @@
 //     }
 // getGreeting()
 
-//  getGreeting = (name) => {console.log( 'Hello ' + name + '!');}
-//  getGreeting()
+//  let getGreeting = (name) => console.log( 'Hello ' + name + '!');
+//  getGreeting("kim");
 // // END OF QUESTION 5
     
+
+
+
+
 
