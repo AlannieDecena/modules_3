@@ -33,7 +33,7 @@
 //     }
 // }
 
-// printObject(bobSmith)
+// printObject(bobSmith);
 
 // const favBook = {
 //         charaName : "percy jackson",

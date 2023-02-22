@@ -74,6 +74,99 @@
 //  getGreeting("kim");
 // // END OF QUESTION 5
     
+// const westley = {                
+//     name: 'Westley',
+//     lastName: 'Montoya',
+//     numFingers: 5
+//     }
+//     const rugen = {
+//     name: 'Count Rugen',
+//     numFingers: 6
+//     }
+//     const inigo = {
+//     firstName: 'Inigo',
+//     greeting(person) {
+//     let greeting = `Hello, my name is ${this.firstName} ${westley.lastName}. `;// including Last name.
+
+//     console.log(greeting + this.getCatchPhrase(person));
+//     },
+//     getCatchPhrase(person) {
+//     return person.name + 'You killed my father. Prepare to die.';
+//     }
+     
+//      getCatchPhrase = (person) => person.name + 'You killed my father. Prepare to die.', //arrow function
+
+//     }
+//     inigo.greeting(westley)
+// //     inigo.greeting(rugen)
+// // END OF QUESTION 6    ???
+
+// const basketballGame = {
+//     score: 0,
+//     foul: 0,
+
+//     freeThrow() {
+
+//         this.score++;
+//         return this;
+
+//      },
+//     basket() {
+//         this.score += 2;
+//         return this;
+//      },
+//     threePointer() {
+//         this.score += 3;
+//         return this;
+//         },
+
+//         foulScore(){
+//             this.foul++;
+//             return this;
+//         },
+
+//     halfTime() {
+//         console.log('Halftime score is '+this.score);
+//         console.log('foul count is: ' + this.foul);
+        
+//         return this;
+//         },
+    
+//         finalScore() {
+//             console.log('final score score is '+this.score);
+//             console.log('foul count is: ' + this.foul);
+//             return this;
+//             }
+//     }
+
+//     // basketballGame.basket().freeThrow().freeThrow().basket().threePointer().halfTime().finalScore();
+// basketballGame.basket().threePointer().foulScore().freeThrow().halfTime().basket().foulScore().freeThrow().finalScore();
+// END OF QUESTION 7
+
+const sydney = {
+    name: 'Sydney',
+    population: 5_121_000,
+    state: 'NSW',
+    founded: '26 January 1788',
+    timezone: 'Australia/Sydney',
+    
+    }
+    const tokyo = {
+        name: 'akl',
+        population: 13_960_000 ,
+        capital: 'shinjuku',
+        founded: 'Meiji era (1868-1912)',
+        timezone: '4 hours behind NZ',
+        
+        }
+    function printObject(city){
+        for(const obProp in city) {
+            console.log(`${obProp}: ${city[obProp]}`);
+        }
+    }
+printObject(sydney);
+printObject(tokyo);
+// END OF QUESTION 8
 
 
 
