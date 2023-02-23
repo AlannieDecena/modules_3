@@ -143,32 +143,82 @@
 // basketballGame.basket().threePointer().foulScore().freeThrow().halfTime().basket().foulScore().freeThrow().finalScore();
 // END OF QUESTION 7
 
-const sydney = {
-    name: 'Sydney',
-    population: 5_121_000,
-    state: 'NSW',
-    founded: '26 January 1788',
-    timezone: 'Australia/Sydney',
+// const sydney = {
+//     name: 'Sydney',
+//     population: 5_121_000,
+//     state: 'NSW',
+//     founded: '26 January 1788',
+//     timezone: 'Australia/Sydney',
     
-    }
-    const tokyo = {
-        name: 'akl',
-        population: 13_960_000 ,
-        capital: 'shinjuku',
-        founded: 'Meiji era (1868-1912)',
-        timezone: '4 hours behind NZ',
+//     }
+//     const tokyo = {
+//         name: 'akl',
+//         population: 13_960_000 ,
+//         capital: 'shinjuku',
+//         founded: 'Meiji era (1868-1912)',
+//         timezone: '4 hours behind NZ',
         
-        }
-    function printObject(city){
-        for(const obProp in city) {
-            console.log(`${obProp}: ${city[obProp]}`);
-        }
-    }
-printObject(sydney);
-printObject(tokyo);
+//         }
+//     function printObject(city){
+//         for(const obProp in city) {
+//             console.log(`${obProp}: ${city[obProp]}`);
+//         }
+//     }
+// printObject(sydney);
+// printObject(tokyo);
 // END OF QUESTION 8
 
+// let teamSports = ['Hockey', 'Cricket', 'Volleyball'];
+// let moreSports = teamSports.push('Basketball');
+// moreSports = teamSports.unshift('Tennis', 'Ruby');
+// // console.log(teamSports);
+
+// let dog1 = 'Bingo';
+// let dog2 = dog1
+// dog1 = 'chopper';
 
 
+// let cat1 = { name: 'Fluffy', breed: 'Siberian' };
+// cat2 = cat1;
+// cat1.name = 'teddy';
+// console.log(teamSports);
+// console.log(dog1);
+// console.log(cat1);
+// they change because we added and changed the property?
+
+// function OgName(teamSports, moreSports) {
+//    this.teamSports = teamSports;
+//    this.moreSports = moreSports;
+
+//    if (teamSports = pac)
 
 
+// }
+// console.log(moreSports)
+// END OF QUESTION 9 
+
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     this.human = true;
+// }
+
+// let newPerson = new Person ('newperson', 20);
+// let secondPerson = new Person ('secondPerson', 24);
+// console.log(newPerson);
+// console.log(secondPerson);
+
+class PersonClass {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.canDrive = (age > 18) ; 
+    }
+
+};
+
+let newPerson = new PersonClass ('newperson', 20);
+let secondPerson = new PersonClass ('secondPerson', 17);
+console.log(newPerson);
+console.log(secondPerson);
+// END OF QUESTION 10
