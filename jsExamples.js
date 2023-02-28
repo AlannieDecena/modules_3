@@ -213,13 +213,13 @@ const cities_nz = ['Auckland', 'Christchurch', 'Hamilton', 'Wellington', 'Queens
 
 // pepole.forEach(person => console.log(`${person.firstName} ${person.lastName} is ${person.age} years old`))
 
-// const people = [
-//     {firstName: 'Wendy', lastName: 'Darton', age: 52, location: 'QLD'},
-//     {firstName: 'Steven', lastName: 'Williams', age: 41, location: 'NSW'},
-//     {firstName: 'Phillip', lastName: 'Robertson', age: 38, location: 'VIC'},
-//     {firstName: 'Connor', lastName: 'Edmonds', age: 24, location: 'NZ'},
-//     {firstName: 'Sheila', lastName: 'Horne', age: 37, location: 'QLD'},
-// ]
+const people = [
+    {firstName: 'Wendy', lastName: 'Darton', age: 52, location: 'QLD'},
+    {firstName: 'Steven', lastName: 'Williams', age: 41, location: 'NSW'},
+    {firstName: 'Phillip', lastName: 'Robertson', age: 38, location: 'VIC'},
+    {firstName: 'Connor', lastName: 'Edmonds', age: 24, location: 'NZ'},
+    {firstName: 'Sheila', lastName: 'Horne', age: 37, location: 'QLD'},
+]
 // //  people.forEach(person => {
 // //     console.log(person.location);
   
@@ -239,3 +239,164 @@ const cities_nz = ['Auckland', 'Christchurch', 'Hamilton', 'Wellington', 'Queens
 // });
 
 // console.log(people);
+// console.log('total age:' + people.reduce((sum, person) => sum + people.age, 0))
+
+// let sortedQLDer = people.filter(person => person.location == 'QLD').sort((person1, person2) => {
+//     if (person1.firstName == person2.firstName) return 0;
+//     if (person1.firstName > person2.firstName) return 1;
+//     return -1;
+// });
+
+// console.log(sortedQLDer);
+
+// console.log(people.find(person => person.location == 'NZ').firstName);
+// console.log(people.filter(person => person.location == 'NZ').map(person => person.firstName).shift());
+
+// let months = 'January, February, March, April, May, June, July, August, September, October, November, December';
+
+// let threeletter = months.split(',');
+
+// console.log(months.split(',').map(months =>));
+
+
+
+// let people.forEach(person => (console.log(person.firstName + ' is ' + person.age + ' years old')))
+
+// for (let person of people) {
+//     console.log(person.firstName + ' is ' + person.age + ' years old');
+// }
+
+// const plantNames = new Map();
+// plantNames.set('Blueberry', 'Vaccinium');
+// plantNames.set('Daylily', 'Hemerocallis');
+// plantNames.set('Foxglove', 'Digitalis');
+// plantNames.set('Lavender', 'Lavandula');
+// plantNames.set('Turmeric', 'Curcuma Longa');
+
+
+// console.log(plantNames.get('Lavender'));
+
+// console.log(plantNames.has('Blueberry') ? 'its there' : 'not there');
+
+// for (let latinPlant of plantNames.values()) {
+//     console.log(latinPlant);
+// }
+const foods = new Set(['pizza', 'chips', 'pasta', 'seafood', 'salad', 'noodles', 'vegetables']);
+
+// for (let food of foods) {
+//     console.log('1#: (for ... of loop' + food);
+// }
+
+// foods.forEach(food => console.log('2#: (forEach loop) ' + food));
+
+
+// const plantNames = new Map();
+// plantNames.set('Blueberry', 'Vaccinium');
+// plantNames.set('Daylily', 'Hemerocallis');
+// plantNames.set('Foxglove', 'Digitalis');
+// plantNames.set('Lavender', 'Lavandula');
+// plantNames.set('Turmeric', 'Curcuma Longa');
+
+// const[[ plant1Common, plant1Latin], ...otherPlants ] = plantNames
+
+// for ( let [commonName, latintName] of plantNames.entries()) {
+//     console.log(commonName + ' is ' latintName)
+// }
+ 
+// function printWeather() {
+//     // let currentTemp = 28; //degrees celcius
+//     // let maxTemp = 33;
+//     // let windSpeed = 5; //km/h
+//     // let forecast = 'Mostly sunny';
+//     const [currentTemp, maxTemp,windSpeed, forecast] = [ 28, 33, 5, 'mostlysunny']
+//     console.log(`Today's weather forecast: ${forecast}, with a wind speed of ${windSpeed}km/h. The current temperature is ${currentTemp} with a max of ${maxTemp} degrees.`)
+// }
+
+
+// printWeather()
+
+// DATE object  always in UTC time zone
+
+// const today = Date()
+// const chistmas = new Date('2023-12-25')
+// // const tomorrow = new Date(today.getFullYear(), today.getMonth()+1, 1)
+
+//  console.log(today)
+//  console.log(chistmas)
+//  console.log(tomorrow)
+
+//  console.log(today.toLocaleString())
+//  console.log(chistmas.toLocaleString())
+
+// const today = Date()
+// const march7Local = new Date("March 7, 2014")
+// const march7UTC = new Date("2014-03-07")
+
+// console.log(march7Local.toLocaleString())
+// console.log(march7UTC.toLocaleString())
+
+// const easterSunday = new Date('2023-04-09')
+
+// const difference = easterSunday - today;
+// console.log('days until easter' + difference / 1000 / 60 /60 /24)
+
+// let daysDiff = easterSunday.getDate() - today.getDate();
+// let monthDiff = easterSunday.getMonth() - today.getMonth();
+
+// if (daysDiff < 0) {
+//     monthDiff = monthDiff - 1;
+
+//     daysDiff += 30;
+// }
+
+// console.log('there is ' + monthDiff+ 'months and ' +daysDiff+ 'days until easter');
+
+// JSON 
+
+// const room = {
+//     number: 23
+// }
+// const meeting = {
+//     title: "conference",
+//     paticipants: ['jason', 'ann']
+// }
+
+
+// const stringMeeting = JSON.stringify(meeting);
+// const pasedMeething = JSON.stringify(stringMeeting);
+
+// console.log(stringMeeting)
+// console.log(pasedMeething)
+
+// meeting.place = room;
+// room.occupiedBy = meeting;
+
+// const meetingString = JSON.stringify(meeting, (key, value) => {
+//     console.log('key:' +key)
+//     console.log('value:' +key)
+
+//     if (key != '' && value == meeting) return undefined;
+
+//     return value;
+// }, 2); //give space
+
+// console.log(meetingString)
+
+// const backgroundImage = 'background-Image';
+// const marginleft = 'margin-left';
+
+// function camelCase(string) {
+//     const words = string.split('-')
+//     let camelCaseString = '';
+
+//     words.forEach(word => {
+//         if (camelCaseString.length == 0) {
+//             camelCaseString = word;
+      
+//             camelCaseString =+ word.charAt(0).toUpperCase() + word.subString(1);
+//         }
+//     })
+//     return camelCaseString;
+// }
+// console.log(camelCase(backgroundImage));
+// console.log(camelCase(marginleft));
