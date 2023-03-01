@@ -112,13 +112,13 @@
 // console.log(unique(testScores));
 // END OF QUESTION 6
 
-const books = [
-  { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
-  { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
-  { id: 3, title: '1984', author: 'George Orwell', year: 1949 },
-  { id: 4, title: 'Brave New World', author: 'Aldous Huxley', year: 1932 },
-  { id: 5, title: 'The Catcher in the Rye', author: 'J.D. Salinger', year: 1951 },
-  ];
+// const books = [
+//   { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
+//   { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+//   { id: 3, title: '1984', author: 'George Orwell', year: 1949 },
+//   { id: 4, title: 'Brave New World', author: 'Aldous Huxley', year: 1932 },
+//   { id: 5, title: 'The Catcher in the Rye', author: 'J.D. Salinger', year: 1951 },
+//   ];
 
   // function getBookTitle(bookId) {
   //  return bookId = books.find(books => books.id === 5 );
@@ -133,14 +133,18 @@ const books = [
 
 // console.log(getOldBooks(books));
 
-// function addGenre(bookGenre) {
-//   return bookGenre = new Map(genre: "hj")
-// }
-// console.log(book);
-// function getTitles(authorInitial) {
-//   return authorInitial = books.filter(books => books.author === )
+// function addGenre() {
+  
 // }
 
+// console.log(addGenre(books))
+
+
+
+// function getTitles(authorInitial) {
+//   return authorInitial = books.filter(books => books.author.charAt(0)) ;
+// }
+// console.log(getTitles(books))
 
 // function latestBook() {
 //   let mostRecentYears = 1900;
@@ -153,3 +157,66 @@ const books = [
 // }
 
 //  console.log(latestBook());
+// END OF QUESTION 7??
+
+
+// const phoneBookABC = new Map() //an empty map to begin with
+// phoneBookABC.set('Annabelle', '0412312343')
+// phoneBookABC.set('Barry', '0433221117')
+// phoneBookABC.set('Caroline', '0455221182')
+
+
+// const newPhoneBookDEF = new Map()
+// newPhoneBookDEF.set('Danny', '0213878339');
+// newPhoneBookDEF.set('Eliza', '02155782334');
+// newPhoneBookDEF.set('Fran', '0215578233');
+
+// console.log(newPhoneBookDEF)
+
+// for (const key of newPhoneBookDEF.keys() ) {
+//   console.log(key);
+// }
+// for (const value of newPhoneBookDEF.values() ) {
+//   console.log(value);
+// }
+
+// phoneBookABC.set('Caroline', '0123456789')
+// console.log(phoneBookABC);
+
+// function printPhoneBook(contacts) {
+//   return contacts = phoneBookABC.entries();
+// }
+
+// console.log(printPhoneBook(phoneBookABC));
+
+// const fullPhoneBook = new Map([...phoneBookABC, ...newPhoneBookDEF]);
+// console.log(fullPhoneBook);
+
+// END OF QUESTION 8
+
+let salaries = {
+  "Timothy" : 35000,
+  "David" : 25000,
+  "Mary" : 55000,
+  "Christina" : 75000,
+  "James" : 43000
+  };
+
+  // function sumSalaries(salaries) {
+  //   return Object.values(salaries).reduce((a, b) => a + b, 0);
+  // }
+
+  // console.log(sumSalaries(salaries));
+
+  // function topEarner(salaries) {
+  //   if (salaries === salaries.values() <= 70000) {
+  //     return salaries.entries();
+  //   };
+  // }
+  // topEarner()
+  
+  // END OF QUESTION 9??
+
+const today = new Date();
+console.log('Current time is ' + today.toLocaleTimeString())
+console.log(today.getHours() + ' hours have passed so far today')
