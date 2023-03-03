@@ -84,7 +84,7 @@
 // }
 // // console.log(currencyAddition(1.900, 1.900));
 
-// function currencyOperation(float3, float4, operation, numDecimals) {
+// function currencyOperation(float3, float4, operation) {
 //   float3 = float3 * 100;
 //   float4 = float4 * 100;
 //   let result = 0;
