@@ -82,20 +82,27 @@
 //   return parseFloat(float1.toFixed(2)) + parseFloat(float2.toFixed(2)); 
  
 // }
-// console.log(currencyAddition(1.900, 1.900));
+// // console.log(currencyAddition(1.900, 1.900));
 
-// function currencyOperation(float3, float4, operation) {
-
+// function currencyOperation(float3, float4, operation, numDecimals) {
+//   float3 = float3 * 100;
+//   float4 = float4 * 100;
+//   let result = 0;
 //   switch (operation) {
-//     case '+' : parseFloat(float3.toFixed(2)) + parseFloat(float4.toFixed(2));
+//     case '+' : result = float3 + float4;
 //       break;
-//     case '-' : parseFloat(float3.toFixed(2)) - parseFloat(float4.toFixed(2));
+//     case '-' : result = float3 - float4;
+//       break;
+//     case '*' : result = float3 / float4;
+//       break;
+//     case '/' : result = float3 * float4;
 //       break;
    
 //   }
-//   return operation
+  
+//   return result / 100;
 // }
-// console.log(0.3 == currencyOperation(0.1, 0.2, '+'))
+// console.log(currencyOperation(0.1, 0.2, '+'))
 // END OF QUESTION 5??
 
 // const colours = ['red', 'green', 'blue', 'yellow', 'orange', 'red', 'blue', 'yellow']
@@ -112,13 +119,13 @@
 // console.log(unique(testScores));
 // END OF QUESTION 6
 
-// const books = [
-//   { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
-//   { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
-//   { id: 3, title: '1984', author: 'George Orwell', year: 1949 },
-//   { id: 4, title: 'Brave New World', author: 'Aldous Huxley', year: 1932 },
-//   { id: 5, title: 'The Catcher in the Rye', author: 'J.D. Salinger', year: 1951 },
-//   ];
+const books = [
+  { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: 1925 },
+  { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+  { id: 3, title: '1984', author: 'George Orwell', year: 1949 },
+  { id: 4, title: 'Brave New World', author: 'Aldous Huxley', year: 1932 },
+  { id: 5, title: 'The Catcher in the Rye', author: 'J.D. Salinger', year: 1951 },
+  ];
 
   // function getBookTitle(bookId) {
   //  return bookId = books.find(books => books.id === 5 );
@@ -133,18 +140,23 @@
 
 // console.log(getOldBooks(books));
 
-// function addGenre() {
-  
+// let addGenre = books.map(function(book) {
+//   return {...book, genre: 'novel'}
+// })
+
+// console.log(addGenre)
+
+// function getOldBooks() {
+ 
+//   return books.filter(book => book.year < 1950);
 // }
-
-// console.log(addGenre(books))
-
+// console.log(getOldBooks());
 
 
 // function getTitles(authorInitial) {
-//   return authorInitial = books.filter(books => books.author.charAt(0)) ;
+//   return authorInitial = books.filter(books => books.author.charAt()) ;
 // }
-// console.log(getTitles(books))
+// console.log(getTitles(books))?
 
 // function latestBook() {
 //   let mostRecentYears = 1900;
@@ -194,29 +206,50 @@
 
 // END OF QUESTION 8
 
-let salaries = {
-  "Timothy" : 35000,
-  "David" : 25000,
-  "Mary" : 55000,
-  "Christina" : 75000,
-  "James" : 43000
-  };
+// let salaries = {
+//   "Timothy" : 35000,
+//   "David" : 25000,
+//   "Mary" : 55000,
+//   "Christina" : 75000,
+//   "James" : 43000
+//   };
 
-  // function sumSalaries(salaries) {
-  //   return Object.values(salaries).reduce((a, b) => a + b, 0);
-  // }
+//   function sumSalaries(salaries) {
+//     return Object.values(salaries).reduce((a, b) => a + b, 0);
+//   }
 
   // console.log(sumSalaries(salaries));
 
   // function topEarner(salaries) {
-  //   if (salaries === salaries.values() <= 70000) {
-  //     return salaries.entries();
-  //   };
+  //   let topPay = 0;
+  //   let topEarner = " ";
+
+    // if (salaries.value < 7000) {
+    //   return salaries.value;
+    // }
+  //   for (let name in salaries) {
+  //     if (salaries[name] > topPay) {
+  //       topPay = salaries[name]
+  //       topEarner = name
+  //     }
+  //   }
+  //   return topPay;
   // }
-  // topEarner()
-  
-  // END OF QUESTION 9??
+
+  // console.log(topEarner(salaries))
+
+  // END OF QUESTION 9
 
 const today = new Date();
-console.log('Current time is ' + today.toLocaleTimeString())
-console.log(today.getHours() + ' hours have passed so far today')
+const birthDay = new Date('1998-03-26');
+
+// console.log('Current time is ' + today.toLocaleTimeString())
+// console.log(today.getHours() + ' hours have passed so far today')
+// console.log((today.getHours() * 60 + today.getMinutes()) + ' mins thats passed today')
+// console.log((today.getHours() * 60 * today.getMinutes()) + today.getSeconds() + ' seconds thats passed today')
+
+let years = today.getFullYear() - birthDay.getFullYear();
+let months = today.getMonth() - birthDay.getMonth();
+let days = today.getDate() - birthDay.getDate();
+
+console.log(`Im ${years}years, ${months}months and ${days}days old... T^T`)
