@@ -97,13 +97,13 @@
 //       break;
 //     case '/' : result = float3 * float4;
 //       break;
-   
+  
 //   }
   
 //   return result / 100;
 // }
 // console.log(currencyOperation(0.1, 0.2, '+'))
-// END OF QUESTION 5??
+// END OF QUESTION 5
 
 // const colours = ['red', 'green', 'blue', 'yellow', 'orange', 'red', 'blue', 'yellow']
 // const testScores = [55, 84, 97, 63, 55, 32, 84, 91, 55, 43];
@@ -152,12 +152,6 @@ const books = [
 // }
 // console.log(getOldBooks());
 
-
-// function getTitles(authorInitial) {
-//   return authorInitial = books.filter(books => books.author.charAt()) ;
-// }
-// console.log(getTitles(books))?
-
 // function latestBook() {
 //   let mostRecentYears = 1900;
 
@@ -169,7 +163,7 @@ const books = [
 // }
 
 //  console.log(latestBook());
-// END OF QUESTION 7??
+// END OF QUESTION 7
 
 
 // const phoneBookABC = new Map() //an empty map to begin with
