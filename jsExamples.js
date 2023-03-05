@@ -382,21 +382,21 @@ const foods = new Set(['pizza', 'chips', 'pasta', 'seafood', 'salad', 'noodles',
 
 // console.log(meetingString)
 
-// const backgroundImage = 'background-Image';
-// const marginleft = 'margin-left';
+const backgroundImage = 'background-Image';
+const marginleft = 'margin-left';
 
-// function camelCase(string) {
-//     const words = string.split('-')
-//     let camelCaseString = '';
+function camelCase(string) {
+    const words = string.split('-')
+    let camelCaseString = '';
 
-//     words.forEach(word => {
-//         if (camelCaseString.length == 0) {
-//             camelCaseString = word;
-      
-//             camelCaseString =+ word.charAt(0).toUpperCase() + word.subString(1);
-//         }
-//     })
-//     return camelCaseString;
-// }
-// console.log(camelCase(backgroundImage));
-// console.log(camelCase(marginleft));
+    words.forEach(word => {
+        if (camelCaseString.length == 0) {
+            camelCaseString = word;
+        } else {
+            camelCaseString + word.charAt(0).toUpperCase() + word.subString(1);
+        }
+    })
+    return camelCaseString;
+}
+console.log(camelCase(backgroundImage));
+console.log(camelCase(marginleft));

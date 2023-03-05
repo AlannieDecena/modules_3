@@ -2,6 +2,8 @@
 //     return string = string.charAt(0).toUpperCase() + string.slice(1);
 // }
 
+const { title } = require("process");
+
 // console.log(ucFirstLetters("japan") );
 // END OF  QUESTION 1
 
@@ -144,9 +146,15 @@ const books = [
 //   return {...book, genre: 'novel'}
 // })
 
+function getTitles(authorInitial) {
+   authorInitial = books.filter(title.length < 2);
+ return books.map(); 
+}
+
+getTitles()
 // console.log(addGenre)
 
-// function getOldBooks() {
+// function getOldBooks() {TypeError: false is not a function
  
 //   return books.filter(book => book.year < 1950);
 // }
@@ -234,16 +242,16 @@ const books = [
 
   // END OF QUESTION 9
 
-const today = new Date();
-const birthDay = new Date('1998-03-26');
+// const today = new Date();
+// const birthDay = new Date('1998-03-26');
 
 // console.log('Current time is ' + today.toLocaleTimeString())
 // console.log(today.getHours() + ' hours have passed so far today')
 // console.log((today.getHours() * 60 + today.getMinutes()) + ' mins thats passed today')
 // console.log((today.getHours() * 60 * today.getMinutes()) + today.getSeconds() + ' seconds thats passed today')
 
-let years = today.getFullYear() - birthDay.getFullYear();
-let months = today.getMonth() - birthDay.getMonth();
-let days = today.getDate() - birthDay.getDate();
+// let years = today.getFullYear() - birthDay.getFullYear();
+// let months = today.getMonth() - birthDay.getMonth();
+// let days = today.getDate() - birthDay.getDate();
 
-console.log(`Im ${years}years, ${months}months and ${days}days old... T^T`)
+// console.log(`Im ${years}years, ${months}months and ${days}days old... T^T`)
