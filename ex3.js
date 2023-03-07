@@ -55,10 +55,10 @@
 // function printFibonacci(n) {
 //     let a = 0;
 //     let b = 1;
-    
+
 //     console.log(a)
 //     console.log(b)
- 
+
 //     setInterval(function printNext() {
 //         let c = a + b
 //         console.log(c)
@@ -71,10 +71,10 @@
 
 // function printFibonacciB(n) {
 //     let  [a, b ] = [1, 1]
-    
+
 //     console.log(a)
 //     console.log(b)
- 
+
 //     setTimeout(function printNext(a, b) {
 //         let c = a + b
 //         console.log(c)
@@ -88,7 +88,7 @@
 //     let counter = 2;
 //     console.log(a)
 //     console.log(b)
- 
+
 //     setTimeout(function printNext(a, b) {
 //         let c = a + b
 //         counter = counter + 1;
@@ -114,7 +114,7 @@
 //     model: '911',
 //     year: 1964,
 //     description() {
-    
+
 //     console.log(`This car is a ${this.make} ${this.model} from ${this.year}`);
 //     }
 //     };
@@ -129,27 +129,104 @@
 // car = {...car, model:'123' } //E
 // END OF QUESTION 5
 
-
-// function multiply(a, b) {
-//     console.log( a * b );
-//  }
-
 // delay.prototype = setTimeseout() 
 
 
 // multiply.delay(500)(5, 5);
 // END OF QUESTION 6 ??
 
-function Person(name, age, gender) {
-    this.name = name;
-    this.age = age;
-    this.gender = gender;
- }
+// function Person(name, age, gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+// //  }
 
-const cusPerson = new Person['Kent', 23, 'non-binary']
+//  Person.prototype.toString = function() {
+//     return `This is ${this.name} they are ${this.gender} and ${this.age} years old `
+//  }
 
-cusPerson.toString()
+// const cusPerson = new Person('Kent', 'non-binary', 23)//A
+// console.log(cusPerson)
+// const cusPerson2 = new Person('sara', 'male', 38)//B
+// console.log(cusPerson2)
+// const cusPerson3 = new Person('Ben', 'female', 26)
+// console.log(cusPerson3)
 
-const arr = [1, 2, 3];
+// //C
+// function Student(name, age, gender, cohort) {
+//    Person.call(this, name, age, gender);
+//    this.cohort = cohort;
+// }
+// Student.prototype.toString = function() {
+//    return `${this.name} ${this.gender} ${this.age} ${this.age} ${this.cohort}`
+// }
+// const cusStudent = new Student('Kent', 'non-binary', 23, '2012Cohort')
+// console.log(cusStudent)
 
-console.log(cusPerson.toString())
+// const cusStudent2 = new Student('sara', 'male', 38,'2023Cohort' )
+// console.log(cusStudent2)
+// END OF QUESTION 7
+
+// class DigitalClock {
+//    constructor(prefix) {
+//       this.prefix = prefix;
+//    }
+//    display() {
+//       let date = new Date();
+//       //create 3 variables in one go using array destructuring
+//       let [hours, mins, secs] = [date.getHours(), date.getMinutes(),
+//       date.getSeconds()];
+//       if (hours < 10) hours = '0' + hours;
+//       if (mins < 10) mins = '0' + mins;
+//       if (secs < 10) secs = '0' + secs;
+//       console.log(`${this.prefix} ${hours}:${mins}:${secs}`);
+//    }
+//    stop() {
+//       clearInterval(this.timer);
+//    }
+//    start() {
+//       this.display();
+//       this.timer = setInterval(() => this.display(), 1000);
+//    }
+// }
+// const myClock = new DigitalClock('my clock:')
+// myClock.start()
+
+// class PrecisionClock extends DigitalClock {
+//    constructor(precision)
+// }
+
+//  END OF QUESTION 8??
+
+// function randomDelay() {
+//    let delay = Math.ceil(Math.random() * 20);
+//    return new Promise(resolve => setTimeout(resolve, delay*1000)) 
+
+//    }
+
+//    function randomDelay() {
+//       let delay = Math.ceil(Math.random() * 20);
+//       return new Promise(resolve => setTimeout(resolve, delay*1000)) 
+//          if (setTimeout())
+//       }
+
+
+// randomDelay().then(() => console.log('There appears to have been a delay.'));
+//  END OF QUESTION 9??
+
+import fetch from 'node-fetch'
+globalThis.fetch = fetch
+function fetchURLData(url) {
+   let fetchPromise = fetch(url).then(response => {
+      if (response.status === 200) {
+         return response.json();
+      } else {
+         throw new Error(`Request failed with status ${response.status}`);
+      }
+
+   });
+   return fetchPromise;
+}
+fetchURLData('https://jsonplaceholder.typicode.com/todos/1')
+   .then(data => console.log(data))
+   .catch(error => console.error(error.message));
